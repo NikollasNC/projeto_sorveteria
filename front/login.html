@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <form action="index.html" id="formulario" method="post">
+        <h1>Login</h1>
+
+        <input type="text" name="nome" id="nome" required placeholder="Nome">
+        <input type="email" name="email" id="email" required placeholder="Email">
+        <div class="div_login">
+            <input type="password" name="senha" id="senha" required placeholder="Senha">
+            <img src="img/img_login/visibility.png" id="btn_senha" alt="visibility_off" onclick="mostrarSenha()">
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6Lc3eBwsAAAAAAkMrlpAKtYOU6OpsLyyrO_5lQzz"></div>
+
+        <div class="div_botoes">
+            <button type="submit" id="botao_entrar">Entrar</button>
+            <button type="submit" id="cadastrar">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+<script src="js/login.js"></script>
+
+</html>

@@ -1,0 +1,309 @@
+:root {
+    --fundo1: rgb(255, 247, 224);
+    --fundo2: rgb(255, 255, 255);
+    --fundo3: rgb(253, 243, 214);
+
+    --fundoTransparente1: rgba(218, 218, 218, 0.137);
+
+    --borda1: rgb(139, 131, 93);
+    --borda2: rgb(206, 176, 6);
+
+    --sombra1: rgba(0, 0, 0, 0.5);
+
+    --botao1: rgb(242, 248, 152);
+    --botao2: rgb(152, 248, 157);
+    --botao3: rgb(248, 152, 152);
+
+    --borderBotao1: rgb(240, 216, 0);
+    --borderBotao2: rgb(0, 150, 8);
+    --borderBotao3: rgb(150, 0, 0);
+
+    --inputColor: #f5f0e1;
+
+    --borderColor: #ffffff57;
+    --hover: rgba(212, 212, 212, 0.322);
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: var(--fundo1);
+}
+
+.botao1 {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+
+    padding: 0.5em;
+
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+header {
+    height: 100dvh;
+    width: 100px;
+    padding: 2em 1em 2em 1em;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-right: 1px solid var(--borderColor);
+    box-shadow: 0 0 5px var(--sombra1);
+
+    transition: 0.5s;
+
+    &:hover {
+        width: 315px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.header_top {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header_bottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.botaoSelecionado {
+    font-weight: bolder;
+    background-color: var(--hover);
+}
+
+/* Telas */
+main {
+    padding-left: 100px;
+}
+
+.tela_inicio {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    background-color: var(--fundo1);
+    width: 100%;
+    height: 700px;
+}
+
+.tela_conta {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    background-color: var(--fundo1);
+    height: 700px;
+}
+
+.tela_addSorvete {
+    /* position: fixed; */
+    z-index: -1;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    width: 100%;
+    padding: 11em 3em 3em 3em;
+
+    background-color: var(--fundo1);
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+#cadastro {
+    position: absolute;
+    width: 80%;
+    top: 3em;
+
+    background-color: var(--fundoTransparente1);
+    padding: 1em 2em 1em 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    height: 87px;
+    transition: 0.5s;
+
+    backdrop-filter: blur(3px);
+
+    border: 1px solid var(--borderColor);
+    border-radius: 40px;
+    box-shadow: 0 0 5px var(--sombra1);
+
+    max-width: 90%;
+}
+
+.cadastro_header {
+    margin-bottom: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    max-height: 50px;
+}
+
+.cadastro_bottom {
+    margin-bottom: 1.5em;
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 0.5fr 1fr 1fr;
+
+    img {
+        height: 200px;
+        width: 250px;
+
+        border-radius: 30px;
+    }
+
+    input,
+    select {
+        padding: 0.5em;
+        width: 100%;
+        border-radius: 10cap;
+        margin-bottom: 2.6em;
+
+        font-size: 1.5rem;
+        background-color: var(--inputColor);
+        border: 2px solid var(--borda1);
+
+        &:focus {
+            outline: none;
+            border-color: var(--borda2);
+        }
+    }
+
+    button {
+        width: 130px;
+        padding: 0.5em;
+        border-radius: 10cap;
+        font-size: 1.5rem;
+    }
+}
+
+.cadastro_botoes {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+#cadastro_cancelar{
+    background-color: var(--botao3);
+    border-color: var(--borderBotao3);
+}
+
+#cadastro_confirmar {
+    background-color: var(--botao2);
+    border-color: var(--borderBotao2);
+}
+
+#carregar_imagem {
+    height: 330px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+
+    label {
+        background-color: var(--botao1);
+        border: 1px solid var(--borderBotao1);
+        width: 90%;
+        padding: 0.7em;
+        border-radius: 10cap;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    input {
+        display: none;
+    }
+}
+
+#sorvete_car {
+    background-color: var(--fundo3);
+    box-shadow: 0 0 10px var(--sombra1);
+    padding: 1em;
+
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 20px;
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+.botoes_card {
+    display: flex;
+    justify-content: center;
+}
+
+.img_card {
+    width: 300px;
+    height: 250px;
+
+    border-radius: 20px;
+    border: 1px solid var(--borderColor);
+}
+
+.tela_estoque {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    background-color: var(--fundo1);
+    height: 700px;
+}
+
+.tela_configuracoes {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    background-color: var(--fundo1);
+    height: 700px;
+}
