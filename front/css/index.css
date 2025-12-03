@@ -198,7 +198,40 @@ main {
     top: 0;
 
     background-color: var(--fundo1);
-    height: 1300px;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+
+    padding: 3em;
+
+    img {
+        width: 90%;
+        max-width: 350px;
+
+        border: 5px solid var(--tema1);
+        border-radius: 50%;
+
+        box-shadow: 0px 0px 5px var(--sombra1);
+    }
+
+    div {
+        background-color: var(--fundo2);
+        padding: 0.5em 2em;
+
+        border-radius: 10cap;
+        border: 3px solid var(--tema1);
+
+        width: 100%;
+        max-width: 350px;
+        box-shadow: 0px 0px 5px var(--sombra1);
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
 }
 
 .tela_addSorvete {
@@ -336,7 +369,7 @@ main {
     }
 }
 
-#sorvete_car {
+.sorvete_car {
     background-color: var(--fundo3);
     box-shadow: 0 0 10px var(--sombra1);
     padding: 1em;
@@ -429,6 +462,12 @@ main {
     position: fixed;
     position-area: center right;
     translate: -100%;
+}
+
+.carousel::scroll-button(right) {
+    content: '⮞';
+    position-area: center right;
+    translate: -50%;
 }
 
 .carousel::scroll-button(left) {
