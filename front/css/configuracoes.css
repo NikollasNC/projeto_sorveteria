@@ -1,3 +1,95 @@
 main {
     margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+}
+
+.conta {
+    display: flex;
+    gap: 2em;
+
+    img {
+        max-width: 300px;
+        grid-row: 1/3;
+
+        border: 3px solid var(--tema1);
+        border-radius: 50%;
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.conta_info {
+    padding: 2em;
+
+    div {
+        padding: 0.5em;
+    }
+
+    h1 {
+        padding: 0em 0em 0.2em 0.5em;
+    }
+
+    h2 {
+        width: 300px;
+        background-color: var(--fundo3);
+        padding: 0.5em;
+        overflow: hidden;
+
+        border: 2px solid var(--tema1);
+        border-radius: 50cap;
+    }
+}
+
+.options {
+    padding: 3em;
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+
+    hr {
+        width: 150px;
+        height: 2px;
+        border: none;
+        margin: auto;
+        background-color: rgb(121, 121, 121);
+    }
+}
+
+.op {
+    font-weight: bolder;
+    margin: auto;
+}
+
+.botao {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5em;
+
+    background-color: var(--fundo3);
+
+    border: 2px solid var(--tema1);
+    border-radius: 50cap;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover2);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+a {
+    text-decoration: none;
 }

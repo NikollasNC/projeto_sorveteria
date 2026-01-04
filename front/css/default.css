@@ -26,6 +26,7 @@
 
     --borderColor: #ffffff57;
     --hover: rgba(212, 212, 212, 0.322);
+    --hover2: rgba(255, 255, 255, 0.637);
 
     --home: url('../img/img_index/navBar/home.png');
     --add: url('../img/img_index/navBar/add_circle.png');
@@ -62,6 +63,7 @@
 
     --borderColor: #ffffff57;
     --hover: rgba(212, 212, 212, 0.322);
+    --hover2: rgba(212, 212, 212, 0.322);
 
     --home: url('../img/img_index/navBar/home_branca.png');
     --add: url('../img/img_index/navBar/add_circle_branco.png');
@@ -142,6 +144,10 @@ nav {
     background-image: var(--config);
 }
 
+.icone_tema {
+    background-image: var(--botaoTema);
+}
+
 .header_bottom {
     height: 100%;
     display: flex;
@@ -174,6 +180,23 @@ nav {
 .botaoSelecionado {
     font-weight: bolder;
     background-color: var(--hover);
+}
+
+.botao1 {
+    display: flex;
+    padding: 0.5em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: var(--hover);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
 }
 
 footer {
