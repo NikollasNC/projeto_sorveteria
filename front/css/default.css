@@ -1,0 +1,201 @@
+:root {
+    --fundo1: rgb(255, 247, 224);
+    --fundo2: rgb(255, 255, 255);
+    --fundo3: rgb(253, 243, 214);
+
+    --corFonte: rgb(0, 0, 0);
+
+    --tema1: rgb(192, 33, 60);
+
+    --fundoTransparente1: rgba(218, 218, 218, 0.137);
+
+    --borda1: rgb(139, 131, 93);
+    --borda2: rgb(206, 176, 6);
+
+    --sombra1: rgba(0, 0, 0, 0.5);
+
+    --botao1: rgb(242, 248, 152);
+    --botao2: rgb(152, 248, 157);
+    --botao3: rgb(248, 152, 152);
+
+    --borderBotao1: rgb(240, 216, 0);
+    --borderBotao2: rgb(0, 150, 8);
+    --borderBotao3: rgb(150, 0, 0);
+
+    --inputColor: #f5f0e1;
+
+    --borderColor: #ffffff57;
+    --hover: rgba(212, 212, 212, 0.322);
+
+    --home: url('../img/img_index/navBar/home.png');
+    --add: url('../img/img_index/navBar/add_circle.png');
+    --estoque: url('../img/img_index/navBar/package.png');
+    --config: url('../img/img_index/navBar/settings.png');
+    --botaoTema: url('../img/config/dark_mode.png');
+}
+
+.tema_escuro {
+    --fundo1: rgb(36, 36, 36);
+    --fundo2: rgb(121, 121, 121);
+    --fundo3: rgb(56, 56, 56);
+
+    --corFonte: rgb(255, 255, 255);
+
+    --tema1: rgb(192, 33, 60);
+
+    --fundoTransparente1: rgba(218, 218, 218, 0.137);
+
+    --borda1: rgb(39, 39, 39);
+    --borda2: rgb(206, 176, 6);
+
+    --sombra1: rgba(83, 83, 83, 0.5);
+
+    --botao1: rgb(203, 212, 78);
+    --botao2: rgb(152, 248, 157);
+    --botao3: rgb(248, 152, 152);
+
+    --borderBotao1: rgb(240, 216, 0);
+    --borderBotao2: rgb(0, 150, 8);
+    --borderBotao3: rgb(150, 0, 0);
+
+    --inputColor: #9e9e9e;
+
+    --borderColor: #ffffff57;
+    --hover: rgba(212, 212, 212, 0.322);
+
+    --home: url('../img/img_index/navBar/home_branca.png');
+    --add: url('../img/img_index/navBar/add_circle_branco.png');
+    --estoque: url('../img/img_index/navBar/package_branco.png');
+    --config: url('../img/img_index/navBar/settings_branca.png');
+    --botaoTema: url('../img/config/light_mode.png');
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--corFonte);
+}
+
+body {
+    background-color: var(--fundo1);
+}
+
+header {
+    height: 100dvh;
+    width: 100px;
+    padding: 2em 1em 2em 1em;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-right: 1px solid var(--borderColor);
+    box-shadow: 0 0 5px var(--sombra1);
+
+    transition: 0.5s;
+
+    &:hover {
+        width: 315px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.icone {
+    min-width: 50px;
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icone_home {
+    background-image: var(--home);
+}
+
+.icone_add {
+    background-image: var(--add);
+}
+
+.icone_estoque {
+    background-image: var(--estoque);
+}
+
+.icone_config {
+    background-image: var(--config);
+}
+
+.header_bottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.botao_header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+
+    padding: 0.5em;
+
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--hover);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.botaoSelecionado {
+    font-weight: bolder;
+    background-color: var(--hover);
+}
+
+footer {
+    padding-left: 100px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--fundo1);
+
+    hr {
+        grid-column: 1 / 4;
+        width: 80%;
+        height: 5px;
+        margin: 2em 0em 0em 0em;
+
+        border: none;
+        border-radius: 40px;
+
+        background-color: var(--tema1);
+    }
+
+    h1 {
+        padding: 1em;
+        font-size: 1.2rem;
+    }
+}

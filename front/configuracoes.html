@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/tema.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/configuracoes.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <nav>
+                <a href="inicio.html" class="botao_header">
+                    <div class="icone icone_home"></div>
+                    <h1>Início</h1>
+                </a>
+                <a href="addSorvete.html" class="botao_header">
+                    <div class="icone icone_add"></div>
+                    <h1>Adicionar Sorvete</h1>
+                </a>
+                <a href="estoque.html" class="botao_header">
+                    <div class="icone icone_estoque"></div>
+                    <h1>Estoque</h1>
+                </a>
+            </nav>
+        </div>
+
+        <div class="header_bottom ">
+            <a href="configuracoes.html" class="botao_header  botaoSelecionado">
+                <div class="icone icone_config"></div>
+                <h1>Configurações</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="conta">
+            <img src="img/usuario/foto_usuario.png" alt="foto_usuario">
+
+            <div>
+                <h1>Nome</h1>
+                <h2>Belly Sorvetes</h2>
+            </div>
+
+            <div>
+                <h1>Email</h1>
+                <h2>bellysorvetes@gmail.com</h2>
+            </div>
+        </section>
+
+        <section class="options">
+            <div>
+                <h1>Tema</h1>
+                <button class="botao1" id="botao_tema"><img id="img_tema" src="img/config/dark_mode.png" alt="dark_mode"></button>
+            </div>
+
+            <a href="login.html">Sair <img src="img/config/mode_off_on.png" alt="mode_off_on"></a>
+        </section>
+    </main>
+</body>
+
+<script src="js/config.js"></script>
+
+</html>

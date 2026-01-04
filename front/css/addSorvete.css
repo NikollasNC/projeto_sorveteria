@@ -1,0 +1,169 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    margin: 160px 0px 0px 100px;
+
+    background-color: var(--fundo1);
+}
+
+#cadastro {
+    position: absolute;
+    width: 80%;
+    top: 3em;
+    
+    background-color: var(--fundoTransparente1);
+    padding: 1em 2em 1em 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    height: 87px;
+    transition: 0.5s;
+    
+    backdrop-filter: blur(3px);
+    
+    border: 1px solid var(--borderColor);
+    border-radius: 40px;
+    box-shadow: 0 0 5px var(--sombra1);
+    
+    max-width: 90%;
+    
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.cadastro_header {
+    margin-bottom: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    max-height: 50px;
+}
+
+.cadastro_bottom {
+    margin-bottom: 1.5em;
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 0.5fr 1fr 1fr;
+
+    img {
+        height: 200px;
+        width: 250px;
+
+        border-radius: 30px;
+    }
+
+    input,
+    select {
+        padding: 0.5em;
+        width: 100%;
+        border-radius: 10cap;
+        margin-bottom: 2.6em;
+
+        font-size: 1.5rem;
+        background-color: var(--inputColor);
+        border: 2px solid var(--borda1);
+
+        &:focus {
+            outline: none;
+            border-color: var(--borda2);
+        }
+    }
+
+    button {
+        width: 130px;
+        padding: 0.5em;
+        border-radius: 10cap;
+        font-size: 1.5rem;
+    }
+}
+
+.cadastro_botoes {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+#cadastro_cancelar {
+    background-color: var(--botao3);
+    border-color: var(--borderBotao3);
+}
+
+#cadastro_confirmar {
+    background-color: var(--botao2);
+    border-color: var(--borderBotao2);
+}
+
+#carregar_imagem {
+    height: 330px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+
+    label {
+        background-color: var(--botao1);
+        border: 1px solid var(--borderBotao1);
+        width: 90%;
+        padding: 0.7em;
+        border-radius: 10cap;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    input {
+        display: none;
+    }
+}
+
+.section_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+
+    width: 100%;
+    padding: 2em;
+}
+
+.sorvete_car {
+    background-color: var(--fundo3);
+    padding: 1em;
+
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 3px var(--sombra1);
+    border-radius: 20px;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.botoes_card {
+    display: flex;
+    justify-content: center;
+}
+
+.img_card {
+    width: 300px;
+    height: 250px;
+
+    border-radius: 20px;
+    border: 1px solid var(--borderColor);
+}

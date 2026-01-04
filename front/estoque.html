@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/tema.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/estoque.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.6/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/2.3.6/js/dataTables.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <nav>
+                <a href="inicio.html" class="botao_header">
+                    <div class="icone icone_home"></div>
+                    <h1>Início</h1>
+                </a>
+                <a href="addSorvete.html" class="botao_header">
+                    <div class="icone icone_add"></div>
+                    <h1>Adicionar Sorvete</h1>
+                </a>
+                <a href="estoque.html" class="botao_header">
+                    <div class="icone icone_estoque"></div>
+                    <h1>Estoque</h1>
+                </a>
+            </nav>
+        </div>
+
+        <div class="header_bottom ">
+            <a href="configuracoes.html" class="botao_header  botaoSelecionado">
+                <div class="icone icone_config"></div>
+                <h1>Configurações</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabela_estoque">
+            <table id="estoque" class="display">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Demanda</th>
+                        <th>lucro</th>
+                        <th>Prejuízo</th>
+                        <th>Data de fabricação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Morango</td>
+                        <td>7.50</td>
+                        <td>Alta</td>
+                        <td>320.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-28</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>8.00</td>
+                        <td>Alta</td>
+                        <td>410.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-27</td>
+                    </tr>
+                    <tr>
+                        <td>Pistache</td>
+                        <td>12.00</td>
+                        <td>Média</td>
+                        <td>290.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-26</td>
+                    </tr>
+                    <tr>
+                        <td>Flocos</td>
+                        <td>7.00</td>
+                        <td>Média</td>
+                        <td>180.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-25</td>
+                    </tr>
+                    <tr>
+                        <td>Chocomenta</td>
+                        <td>8.50</td>
+                        <td>Baixa</td>
+                        <td>90.00</td>
+                        <td>40.00</td>
+                        <td>2025-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>Napolitano</td>
+                        <td>9.00</td>
+                        <td>Alta</td>
+                        <td>360.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-23</td>
+                    </tr>
+                    <tr>
+                        <td>Morango</td>
+                        <td>7.50</td>
+                        <td>Média</td>
+                        <td>210.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-22</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>8.00</td>
+                        <td>Alta</td>
+                        <td>430.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-21</td>
+                    </tr>
+                    <tr>
+                        <td>Pistache</td>
+                        <td>12.00</td>
+                        <td>Baixa</td>
+                        <td>120.00</td>
+                        <td>80.00</td>
+                        <td>2025-11-20</td>
+                    </tr>
+                    <tr>
+                        <td>Flocos</td>
+                        <td>7.00</td>
+                        <td>Média</td>
+                        <td>190.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-19</td>
+                    </tr>
+                    <tr>
+                        <td>Chocomenta</td>
+                        <td>8.50</td>
+                        <td>Média</td>
+                        <td>160.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-18</td>
+                    </tr>
+                    <tr>
+                        <td>Napolitano</td>
+                        <td>9.00</td>
+                        <td>Alta</td>
+                        <td>370.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-17</td>
+                    </tr>
+
+                    <tr>
+                        <td>Morango</td>
+                        <td>7.50</td>
+                        <td>Alta</td>
+                        <td>340.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-16</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>8.00</td>
+                        <td>Média</td>
+                        <td>260.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-15</td>
+                    </tr>
+                    <tr>
+                        <td>Pistache</td>
+                        <td>12.00</td>
+                        <td>Média</td>
+                        <td>300.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-14</td>
+                    </tr>
+                    <tr>
+                        <td>Flocos</td>
+                        <td>7.00</td>
+                        <td>Baixa</td>
+                        <td>95.00</td>
+                        <td>35.00</td>
+                        <td>2025-11-13</td>
+                    </tr>
+                    <tr>
+                        <td>Chocomenta</td>
+                        <td>8.50</td>
+                        <td>Baixa</td>
+                        <td>80.00</td>
+                        <td>50.00</td>
+                        <td>2025-11-12</td>
+                    </tr>
+                    <tr>
+                        <td>Napolitano</td>
+                        <td>9.00</td>
+                        <td>Média</td>
+                        <td>240.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-11</td>
+                    </tr>
+
+                    <tr>
+                        <td>Morango</td>
+                        <td>7.50</td>
+                        <td>Média</td>
+                        <td>230.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-10</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>8.00</td>
+                        <td>Alta</td>
+                        <td>420.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-09</td>
+                    </tr>
+                    <tr>
+                        <td>Pistache</td>
+                        <td>12.00</td>
+                        <td>Alta</td>
+                        <td>380.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-08</td>
+                    </tr>
+                    <tr>
+                        <td>Flocos</td>
+                        <td>7.00</td>
+                        <td>Média</td>
+                        <td>175.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-07</td>
+                    </tr>
+                    <tr>
+                        <td>Chocomenta</td>
+                        <td>8.50</td>
+                        <td>Média</td>
+                        <td>150.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-06</td>
+                    </tr>
+                    <tr>
+                        <td>Napolitano</td>
+                        <td>9.00</td>
+                        <td>Baixa</td>
+                        <td>110.00</td>
+                        <td>60.00</td>
+                        <td>2025-11-05</td>
+                    </tr>
+                    <tr>
+                        <td>Morango</td>
+                        <td>7.50</td>
+                        <td>Alta</td>
+                        <td>360.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-04</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>8.00</td>
+                        <td>Média</td>
+                        <td>270.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-03</td>
+                    </tr>
+                    <tr>
+                        <td>Pistache</td>
+                        <td>12.00</td>
+                        <td>Baixa</td>
+                        <td>100.00</td>
+                        <td>90.00</td>
+                        <td>2025-11-02</td>
+                    </tr>
+                    <tr>
+                        <td>Flocos</td>
+                        <td>7.00</td>
+                        <td>Alta</td>
+                        <td>220.00</td>
+                        <td>0.00</td>
+                        <td>2025-11-01</td>
+                    </tr>
+                    <tr>
+                        <td>Chocomenta</td>
+                        <td>8.50</td>
+                        <td>Média</td>
+                        <td>155.00</td>
+                        <td>0.00</td>
+                        <td>2025-10-31</td>
+                    </tr>
+                    <tr>
+                        <td>Napolitano</td>
+                        <td>9.00</td>
+                        <td>Alta</td>
+                        <td>395.00</td>
+                        <td>0.00</td>
+                        <td>2025-10-30</td>
+                    </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+
+        <h1>©Bismarkolas 2025</h1>
+    </footer>
+</body>
+
+<script src="js/estoque.js"></script>
+
+</html>
