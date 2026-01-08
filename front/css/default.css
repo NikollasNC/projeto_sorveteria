@@ -1,11 +1,12 @@
 :root {
-    --fundo1: rgb(255, 247, 224);
+    --fundo1: rgb(255, 251, 239);
     --fundo2: rgb(255, 255, 255);
-    --fundo3: rgb(253, 243, 214);
+    --fundo3: rgb(250, 244, 226);
 
     --corFonte: rgb(53, 53, 53);
 
     --tema1: rgb(192, 33, 60);
+    --tema2: rgb(37, 165, 6);
 
     --fundoTransparente1: rgba(218, 218, 218, 0.137);
 
@@ -40,7 +41,7 @@
     --fundo2: rgb(121, 121, 121);
     --fundo3: rgb(56, 56, 56);
 
-    --corFonte: rgb(245, 244, 237);
+    --corFonte: rgb(248, 246, 229);
 
     --tema1: rgb(192, 33, 60);
 
