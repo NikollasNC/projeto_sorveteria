@@ -31,7 +31,7 @@ main {
     justify-content: space-around;
 }
 
-.card_ralatorio {
+#card_ralatorioDia {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -54,7 +54,7 @@ main {
     }
 }
 
-.div_rela {
+.div_relaDia {
     div {
         display: flex;
         gap: 0.5em;
@@ -85,7 +85,7 @@ main {
     }
 }
 
-#card_relatorio2 {
+.card_relatorio_grafico {
     display: grid;
     grid-template-rows: 1fr 1fr 3fr;
     
@@ -103,7 +103,7 @@ main {
         font-size: 1.5rem;
     }
 
-    #info_rela2 {
+    #info_relaGra {
         display: flex;
         align-items: center;
     }
