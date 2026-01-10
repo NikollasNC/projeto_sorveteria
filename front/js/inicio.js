@@ -1,47 +1,31 @@
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
 google.charts.load('current', { 'packages': ['corechart'] });
-google.charts.setOnLoadCallback(drawChart2);
+google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-
     var data = google.visualization.arrayToDataTable([
-        ['Effort', 'Amount given'],
-        ['', 20],
-        ['Estoque', 80]
+        ['Dia', 'Receita', { role: 'style' }],
+        ['Dom', 420.30, '#b87333'],
+        ['Seg', 120.73, '#b87333'],
+        ['Ter', 130.18, '#b87333'],
+        ['Qua', 100.10, '#b87333'],
+        ['Qui', 220.00, '#b87333'],
+        ['Sex', 343.40, '#b87333'],
+        ['Sáb', 520.20, '#b87333']
     ]);
 
     var options = {
-        pieHole: 0.5,
-        pieSliceTextStyle: {
-            color: 'black',
-        },
-        legend: 'none',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        'legend': 'none',
+
+        vAxis: {
+          textStyle: {
+            color: '#b87333',
+            bold: false,
+            italic: false
+          }
+        }
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
-    chart.draw(data, options);
-}
-
-function drawChart2() {
-    var data = google.visualization.arrayToDataTable([
-        ['Dia', 'Clientes'],
-        ['Domingo', 33],
-        ['Segunda', 20],
-        ['Terça', 18],
-        ['Quarta', 22],
-        ['Quinta', 23],
-        ['Sexta', 30],
-        ['Sábado', 40]
-    ]);
-
-    var options = {
-        legend: 'none',
-        backgroundColor: 'transparent'
-    };
-
-    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-    chart.draw(data, options);
+    var visualization = new google.visualization.ColumnChart(document.getElementById('grafico1'));
+    visualization.draw(data, options);
 }

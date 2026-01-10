@@ -87,8 +87,8 @@ main {
 
 #card_relatorio2 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1em;
+    grid-template-rows: 1fr 1fr 3fr;
+    
 
     width: 100%;
     height: 250px;
@@ -106,5 +106,9 @@ main {
     #info_rela2 {
         display: flex;
         align-items: center;
+    }
+
+    img {
+        width: 40px;
     }
 }
